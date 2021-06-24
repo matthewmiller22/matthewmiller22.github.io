@@ -1,8 +1,5 @@
 h2 {
   color: blue;
   text-align: center;
-}
-
-p {
-  background-color:cyan;
+  text-decoration: underline;
 }
