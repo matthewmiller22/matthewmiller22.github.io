@@ -26,3 +26,12 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+img {
+  margin-right: 40px;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+br>p {
+  margin-left:240px;
+}
