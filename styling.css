@@ -1,5 +1,28 @@
 h2 {
-  color: blue;
-  text-align: center;
+  color: darkgreen;
+  text-align: left;
   text-decoration: underline;
+}
+
+.img_align {
+  text-align:right;
+}
+
+.navbar-nav li a {
+    color: darkgreen !important;
+}
+
+nav a {
+  color:darkgreen !important;
+}
+
+p {
+  text-align:left;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
