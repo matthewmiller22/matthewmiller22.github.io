@@ -1,74 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>M.I.M.</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Matt I. Miller</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/74ebf144c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="images/matty_logo_transparet.png" class="logo">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
 
-    <link rel="stylesheet" href="styling.css">
-  </head>
-  <body style="background-color:rgba(51, 153, 51,0.14);text-align:center">
-    <div class="container">
-
-      <nav class="navbar navbar-expand-lg navbar-light navbar-right">
-        <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-nav float-left text-left pl-3">
-
-
-            <ul class="navbar-nav">
-              <li class="nav-item active ">
-                <a class="nav-link" href="#">About Me<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tutorials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-      <h2>Matthew I. Miller
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
-          <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9zM3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z"/>
-          <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h12z"/>
-        </svg>
-
-      </h2>
-
-      <div class="container">
-        <p><img src="picture_placeholder.png" class="rounded float-left image-fluid" height="200px" width="200px" border="10px" pa="10px"></p>
-
-        <p>I am an MD student in the laboratory of Dr. Vijaya Kolachalama at Boston University/Boston Medical Center, where I predominantly study deep learning methods in neuroradiology. My main research interests are in computer vision and image processing, though I'm also fascinated by Bayesian statistics, causal inference, graph theory, and geometry.
-        Before all else, though, I am a (developing!) physician hoping to pursue a career as a radiologist. Translating fundamental advances in imaging science to clinical impacts is what I strive for, and math/computing empower me to try! </p>
-
-      </div>
+				</ul>
+			</nav>
+<!-- 			<div class="header-text">
+				<p>UI/UX Designer</p>
+				<h1>Hi, I'm <span>Matt</span> <br>Miller from Boston</h1>
+			</div> -->
+		</div>
+	</div>
+<!---------------------about------------------>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="images/matt_kerry.png">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>My name is Matt and I am a science homie. It is lit!</p>
 
 
 
-      <div par="two" class="container">
-        <br>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+							<li><span>Web Development</span><br>Doing Thing 1</li>
+							<li><span>App Development</span><br>Doing Thing 2</li>
+						</ul>
+					</div>
 
-        <p>
-          This website is a place for me to mess around with front-end development, and also keep records of my experiments and personal learning in data science. Over time, I hope it will host various tutorials and original simulations about nontraditional statistics, image processing, and computational tools in medicine.</p>
-       </div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2021-Current</span><br>Training Institute</li>
+							<li><span>2019-2021</span><br>Doing Thing 1</li>
+							<li><span>2014-2019</span><br>Doing Thing 2</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>2021-Current</span><br>Boston University</li>
+							<li><span>2019-2021</span><br>Harvard College</li>
+							<li><span>2014-2019</span><br>Germantown Academy</li>
+						</ul>
+					</div>
 
 
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  </body>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+
+<!--------------------------------------services ----------->
+
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Services</h1>
+		<div class="services-list">
+			<div>
+				<i class="fa-solid fa-code"></i>
+				<h2>Web Development</h2>
+				<p>Check out my web development</p>
+				<a href="#">learn more</a>
+			</div>
+
+
+
+			<div>
+				<i class="fa-solid fa-stethoscope"></i>
+				<h2>UI/UX Design</h2>
+				<p>Check out my web development</p>
+				<a href="#">learn more</a>
+			</div>
+
+
+			<div>
+				<i class="fa-solid fa-cat"></i>
+				<h2>App Design</h2>
+				<p>Check out my web development</p>
+				<a href="#">learn more</a>
+			</div>
+		</div>
+
+
+
+	</div>
+</div>
+
+
+<!-------------------------portfolio------------------->
+<div id="portfolio">
+	<div class="container">
+		<h1 class="sub-title">My Work</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="images/work1.png">
+				<div class="layer">
+					<h3>Social Media App</h3>
+					<p>The app will connect you to the metaverse</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+			<div class="work">
+				<img src="images/work2.png">
+				<div class="layer">
+					<h3>Another thing 2</h3>
+					<p>The other thing 2 is wild!</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+
+			</div>
+
+			<div class="work">
+				<img src="images/work3.png">
+				<div class="layer">
+					<h3>Another thing 3</h3>
+					<p>The other thing 3 is wilder!</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-------------------------contact------------------->
+<!-- <div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left"></div>
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i> mattmill@bu.edu</p>
+				<p> <i class="fa-solid fa-phone"></i> 215-764-0320</p>
+				<div class="social-icons">
+					<a href="#"><i class="fa-solid fa-user-graduate"></i></a>
+					<a href="#"><i class="fa-brands fa-github"></i></a>
+				</div>
+				<a href=""></a>
+			<div class="contact-right"></div>
+		</div>
+	</div>
+	<a href="#" class="btn">See More</a>
+</div> -->
+
+
+<!-----contact 2------->
+<div class="contact">
+	<p><i class="fa-solid fa-envelope"></i> mattmill@bu.edu</p>
+	<p><i class="fa-solid fa-phone"></i> 215-764-0320</p>
+
+
+	<div class="social-icons">
+		<a href="#"><i class="fa-solid fa-user-graduate"></i></a>
+		<a href="#"><i class="fa-brands fa-github"></i></a>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+	var tablinks=document.getElementsByClassName("tab-links");
+	var tabcontents=document.getElementsByClassName("tab-contents");
+
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+</script>
+
+	
+</body>
 </html>
