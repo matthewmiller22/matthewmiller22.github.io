@@ -6,10 +6,19 @@
 }
 
 
+
+.pdf{
+	margin-left:auto;
+	margin-right:auto;
+}
+
 body{
-	background:#d7eed5; /* This is for the background color*/
+	background:#176d0f; /* This is for the background color*/
 	color:#fff; /* This is for the text color*/
 }
+
+
+
 
 #header{
 	width: 100%;
@@ -19,6 +28,14 @@ body{
 	background-position: center;
 }
 
+
+/*formatting for page outside of main page on index.html*/
+#page_header{
+	width: 100%;
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+}
 
 .container{
 	padding:10px 10%;
