@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MathJax Practice</title>
+	<link rel="stylesheet" type="text/css" href="style_latex.css">
+	<!---<link rel="icon" href="" type="svg"> -->
+
+	<script>
+		MathJax={
+			tex: {
+				inlineMath: [['$','$'],['\\(','\\)']]
+			},
+			svg: {
+				fontCache: 'global'
+			}
+		};
+	</script>
+	
+
+
+
+
+
+	<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+	<!----Note that you wrap NON-INLINE FORMULAS with ------>
+	Below is the quadratic formula:
+	\[a^2+b^2=c^2 \Theta\]
+	\[\sum_{k=1}^n \notin\]
+
+
+
+	<!---------Let's do INLINE FORMULAS	 now! ------->
+	Hooray! Now we are doing inline LaTeX in the browser with things like $\sum_{k=1}^n \notin$!
+
+
+	<h1>How to put a Gist into a webpage!</h1>
+	<script class="gist" src="https://gist.github.com/matthewmiller22/2a3fa7ec6f688c9820b7647005c62795.js"></script>
+
+
+</body>
+</html>
